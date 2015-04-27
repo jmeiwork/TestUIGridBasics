@@ -11,40 +11,61 @@
     <link rel="styleSheet" href="~/Scripts/ui-grid/release/ui-grid-unstable.css" />
     <script src="~/Scripts/app.js"></script>
     <style>
-  .grid {
-  /*width: 1000px;*/
-  /*height: 450px;*/
-  }
-  .row-standard {
+        
+         html,
+         body {
+             margin:0;
+             padding:0;
+             height:100%;
+         }
+        .grid {
+            width: 1000px;
+            height: 260px;
+            font-size: 10pt;
+        }
+        #grid-container {
+            width: 1050px; 
+            height: 400px; 
+            overflow-y: auto
+        }
+
+        .row-supply-header {
+            color: lightcoral;
+        }
+
+        .row-target {
+            color: saddlebrown;
       
-  }
+        }
 
-  .row-supply-header {
-      color: lightcoral;
-  }
+        .row-ending-inventory {
+            color: green;
+        }
 
-  .row-target {
-      color: saddlebrown;
-      
-  }
+        .row-total {
+            color: violet;
+        }
 
-  .row-ending-inventory {
-      color: green;
-  }
+        .row-adjustment-header {
+            color: blue;
+        }
 
-  .row-total {
-      color: violet;
-  }
+        .row-supply-detail {
+            color: orange;
+        }
 
-  .row-adjustment-header {
-      color: blue;
-  }
+        #container {
+            min-height:100%;
+            position:relative;
+        }
 
-  .row-supply-detail {
-      color: orange;
-  }
-
-
+        #bottom {
+            position:absolute;
+            bottom:0;
+            width:100%;
+            height:200px;   /* Height of the footer */
+            background:#6cf;
+        }
     </style>
 </head>
 <body>

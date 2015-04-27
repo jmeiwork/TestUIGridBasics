@@ -16,7 +16,7 @@ namespace TestUIGridBasics.Controllers
                 PoolCategory = "Standard",
                 Grade = "RSTD",
                 Notes = "This is a note.",
-                ResultType = ResultTypeEnum.SupplyHeader.ToString(),
+                ResultType = ResultTypeEnum.SupplyDetail.ToString(),
                 Amounts =
                     new ResultRowAmounts()
                     {
@@ -64,7 +64,7 @@ namespace TestUIGridBasics.Controllers
                 PoolCategory = "Standard",
                 Grade = "RSTD",
                 Notes = "This is a note.",
-                ResultType = ResultTypeEnum.AdjustmentHeader.ToString(),
+                ResultType = ResultTypeEnum.AdjustmentDetail.ToString(),
                 Amounts =
                     new ResultRowAmounts()
                     {
@@ -192,7 +192,8 @@ namespace TestUIGridBasics.Controllers
         AdjustmentHeader,
         Total,
         EndingInventory,
-        Target
+        Target,
+        AdjustmentDetail
     }
 
     public class ResultRowAmounts

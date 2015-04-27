@@ -1,11 +1,18 @@
 ﻿
-    <div ng-controller="MainCtrl">
+    <div id="container" ng-controller="MainCtrl">
         <strong>Data Length:</strong> {{ gridOptions.data.length | number }}
         <br>
         <strong>Last Cell Edited:</strong> {{msg.lastCellEdited}}
         <br>
-        <div ui-grid="gridOptions" ui-grid-edit ui-grid-auto-resize class="grid" ng-style="getTableHeight()"></div>
+        <div id="grid-container">
+
+            <div ui-grid="gridOptions" ui-grid-edit ui-grid-auto-resize class="grid" ng-style=""></div>
+            <div ui-grid="gridOptions2" ui-grid-edit ui-grid-auto-resize class="grid" ng-style=""></div>
+        </div>
+
         <br>
-        <div><strong>Last file uploaded:</strong></div>
-        <div>{{lastFile}}</div>
+        <div id="bottom">
+            stuff
+
+        </div>
     </div>
