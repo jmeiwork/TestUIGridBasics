@@ -1,18 +1,21 @@
 ﻿
-    <div id="container" ng-controller="MainCtrl">
+
+<div id="container" ng-controller="MainCtrl">
+    <div id="top">
         <strong>Data Length:</strong> {{ gridOptions.data.length | number }}
         <br>
         <strong>Last Cell Edited:</strong> {{msg.lastCellEdited}}
         <br>
-        <div id="grid-container">
-
-            <div ui-grid="gridOptions" ui-grid-edit ui-grid-auto-resize class="grid" ng-style=""></div>
-            <div ui-grid="gridOptions2" ui-grid-edit ui-grid-auto-resize class="grid" ng-style=""></div>
-        </div>
-
-        <br>
-        <div id="bottom">
-            stuff
-
-        </div>
     </div>
+    <div id="grid-container">
+        <div ui-grid="gridOptions[x.Grade]" ui-grid-edit ui-grid-auto-resize ng-repeat="x in searchResults" class="grid"></div>
+        <br/><br/>
+        @*<div ui-grid="gridOptions" ui-grid-edit ui-grid-auto-resize class="grid" ng-style=""></div>
+        <div ui-grid="gridOptions2" ui-grid-edit ui-grid-auto-resize class="grid" ng-style=""></div>*@
+
+    </div>
+    <div id="bottom">
+        stuff
+
+    </div>
+</div>
