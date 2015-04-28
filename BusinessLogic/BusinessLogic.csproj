@@ -39,7 +39,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\EntitlementDetail.cs" />
+    <Compile Include="Entities\EntitlementType.cs" />
+    <Compile Include="Entities\EntitlementTypeEnum.cs" />
+    <Compile Include="Entities\ForecastDetail.cs" />
+    <Compile Include="Entities\ForecastDetailType.cs" />
+    <Compile Include="Entities\ForecastDetailTypeEnum.cs" />
+    <Compile Include="Entities\ForecastGrouping.cs" />
     <Compile Include="Entities\ForecastSheet.cs" />
+    <Compile Include="Entities\ForecastSheetType.cs" />
+    <Compile Include="Entities\ForecastSheetTypeEnum.cs" />
+    <Compile Include="Entities\Grade.cs" />
+    <Compile Include="Entities\Lookup.cs" />
+    <Compile Include="Entities\Note.cs" />
+    <Compile Include="Entities\Pool.cs" />
+    <Compile Include="Entities\Producer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
